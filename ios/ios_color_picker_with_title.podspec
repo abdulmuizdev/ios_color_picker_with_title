@@ -3,7 +3,7 @@
 # Run `pod lib lint ios_color_picker.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'ios_color_picker'
+  s.name             = 'ios_color_picker_with_title'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter project.'
   s.description      = <<-DESC

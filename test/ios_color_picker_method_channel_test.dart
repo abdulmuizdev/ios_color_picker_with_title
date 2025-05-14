@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ios_color_picker/native_picker/ios_color_picker_method_channel.dart';
+import 'package:ios_color_picker_with_title/native_picker/ios_color_picker_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

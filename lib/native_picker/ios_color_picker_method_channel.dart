@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:ios_color_picker/custom_picker/extensions.dart';
+import 'package:ios_color_picker_with_title/custom_picker/extensions.dart';
 import 'ios_color_picker_platform_interface.dart';
 
 /// An implementation of [IosColorPickerV2Platform] that uses method channels.

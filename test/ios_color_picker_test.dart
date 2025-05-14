@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ios_color_picker/native_picker/ios_color_picker_platform_interface.dart';
-import 'package:ios_color_picker/native_picker/ios_color_picker_method_channel.dart';
+import 'package:ios_color_picker_with_title/native_picker/ios_color_picker_platform_interface.dart';
+import 'package:ios_color_picker_with_title/native_picker/ios_color_picker_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockIosColorPickerPlatform
@@ -9,7 +9,7 @@ class MockIosColorPickerPlatform
     implements IosColorPickerPlatform {
   @override
   Future<Color?> getPlatformColor(
-      Map<String, double>? defaultColor, bool? darkMode) {
+      Map<String, double>? defaultColor, bool? darkMode, String? title) {
     // TODO: implement getPlatformColor
     throw UnimplementedError();
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ios_color_picker/custom_picker/pickers/slider_picker/slider_helper.dart';
-import 'package:ios_color_picker/custom_picker/pickers_selector_row.dart';
-import 'package:ios_color_picker/custom_picker/shared.dart';
+import 'package:ios_color_picker_with_title/custom_picker/pickers/slider_picker/slider_helper.dart';
+import 'package:ios_color_picker_with_title/custom_picker/pickers_selector_row.dart';
+import 'package:ios_color_picker_with_title/custom_picker/shared.dart';
 import 'color_observer.dart';
 import 'helpers/cache_helper.dart';
 import 'history_colors.dart';

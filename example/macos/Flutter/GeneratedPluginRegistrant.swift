@@ -5,7 +5,7 @@
 import FlutterMacOS
 import Foundation
 
-import ios_color_picker
+import ios_color_picker_with_title
 import shared_preferences_foundation
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {

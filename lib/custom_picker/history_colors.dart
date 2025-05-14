@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_color_picker/custom_picker/shared.dart';
+import 'package:ios_color_picker_with_title/custom_picker/shared.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:super_tooltip/super_tooltip.dart';
 import 'color_observer.dart';

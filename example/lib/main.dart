@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ios_color_picker/show_ios_color_picker.dart';
+import 'package:ios_color_picker_with_title/show_ios_color_picker.dart';
 
 void main() {
   runApp(const MyApp());

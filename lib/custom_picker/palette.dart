@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ios_color_picker/custom_picker/shared.dart';
-import 'package:ios_color_picker/custom_picker/utils.dart';
+import 'package:ios_color_picker_with_title/custom_picker/shared.dart';
+import 'package:ios_color_picker_with_title/custom_picker/utils.dart';
 
 class HSLWithSaturationColorPainter extends CustomPainter {
   const HSLWithSaturationColorPainter(this.hslColor, {this.pointerColor});

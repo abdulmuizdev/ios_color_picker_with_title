@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
-import 'package:ios_color_picker/custom_picker/extensions.dart';
+import 'package:ios_color_picker_with_title/custom_picker/extensions.dart';
 import 'ios_color_picker_platform_interface.dart';
 
 class NativeIosColorPicker {

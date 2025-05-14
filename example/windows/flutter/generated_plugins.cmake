@@ -3,7 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  ios_color_picker
+  ios_color_picker_with_title
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

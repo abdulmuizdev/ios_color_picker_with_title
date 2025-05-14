@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ios_color_picker/custom_picker/extensions.dart';
-import 'package:ios_color_picker/custom_picker/pickers/slider_picker/slider_helper.dart';
+import 'package:ios_color_picker_with_title/custom_picker/extensions.dart';
+import 'package:ios_color_picker_with_title/custom_picker/pickers/slider_picker/slider_helper.dart';
 import '../../shared.dart';
 import '../../utils.dart';
 

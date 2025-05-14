@@ -1,6 +1,6 @@
 name: ios_color_picker_with_title
 description: "A modified fork of [ios_color_picker] with title"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/abdulmuizdev/ios_color_picker_with_title
 
 environment:

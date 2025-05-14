@@ -21,18 +21,20 @@ public class IosColorPickerPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
                 {
                 let defaultColor = args["defaultColor"] as? [String: CGFloat]
                 let darkMode = args["darkMode"] as? Bool ?? false
-                self.pickColor(defaultColor: defaultColor, darkMode: darkMode ,result: result)
+                let title = args["title"] as? String ?? "Color"
+                    self.pickColor(title: title, defaultColor: defaultColor, darkMode: darkMode ,result: result)
             } else {
-                self.pickColor(defaultColor: nil, darkMode: false, result: result)
+                self.pickColor(title: "Color", defaultColor: nil, darkMode: false, result: result)
             }
         default:
             result(FlutterMethodNotImplemented)
         }
     }
 
-    private func pickColor(defaultColor: [String: CGFloat]?, darkMode: Bool, result: @escaping FlutterResult) {
+    private func pickColor(title: String, defaultColor: [String: CGFloat]?, darkMode: Bool, result: @escaping FlutterResult) {
         let colorPicker = UIColorPickerViewController()
         colorPicker.selectedColor = defaultColor?.toUIColor() ?? .red
+        colorPicker.title = title
         colorPicker.modalPresentationStyle = .popover
         if darkMode {
                 UIApplication.shared.delegate?.window??.overrideUserInterfaceStyle = .dark

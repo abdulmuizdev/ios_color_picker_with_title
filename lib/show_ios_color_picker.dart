@@ -23,6 +23,7 @@ class IOSColorPickerController {
     required ValueChanged<Color> onColorChanged,
     Color? startingColor,
     bool? darkMode,
+    String? title,
   }) async {
     assert(Platform.isIOS,
         "Only works for iOS use (showIOSCustomColorPicker) for other platforms");
@@ -30,7 +31,7 @@ class IOSColorPickerController {
     selectedColor = startingColor ?? selectedColor;
 
     IosColorPickerPlatform.instance
-        .getPlatformColor(selectedColor.toMap(), darkMode);
+        .getPlatformColor(selectedColor.toMap(), darkMode, title);
     _colorSubscription = _eventChannel.receiveBroadcastStream().listen((event) {
       if (event != null) {
         try {

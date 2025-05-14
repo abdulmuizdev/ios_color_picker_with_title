@@ -12,10 +12,11 @@ class MethodChannelIosColorPicker extends IosColorPickerPlatform {
 
   @override
   Future<Color?> getPlatformColor(
-      Map<String, double>? defaultColor, bool? darkMode) async {
+      Map<String, double>? defaultColor, bool? darkMode, String? title) async {
     Map<String, dynamic> map = {};
     map.addAll(darkMode != null ? {"darkMode": darkMode} : {});
     map.addAll(defaultColor != null ? {"defaultColor": defaultColor} : {});
+    map.addAll(title != null ? {"title": title} : {});
     final color = await methodChannel.invokeMethod<Map>(
       'pickColor',
       map,

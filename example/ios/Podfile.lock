@@ -26,9 +26,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
-  ios_color_picker: 817ef1afaaa6e7584b04009bc80e9c15bb10087a
-  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
+  ios_color_picker: 4b4a4d74640e9a310b5e3f8181dea8be86506dba
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
 
 PODFILE CHECKSUM: 1b50a4280f44a231b37f858aebc2a001225decec
 

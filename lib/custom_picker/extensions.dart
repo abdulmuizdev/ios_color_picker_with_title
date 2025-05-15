@@ -63,13 +63,22 @@ extension ColorExtensions on Color {
 }
 
 extension MapToColorExtension on Map<Object?, Object?> {
-  /// Converts a `Map<String, double>` to a [Color].
-  Color toColor() {
+  /// Converts a `Map<String, double>` to a [Color], clamping to valid range.
+  Color toColor({bool clampValues = true}) {
+    double getComponent(String key) => (this[key] as double?) ?? 0.0;
+
+    double clamp(double value) => value.clamp(0.0, 1.0);
+
+    final red = getComponent("red");
+    final green = getComponent("green");
+    final blue = getComponent("blue");
+    final alpha = getComponent("alpha");
+
     return Color.from(
-      red: this["red"] as double? ?? 0.0,
-      green: this["green"] as double? ?? 0.0,
-      blue: this["blue"] as double? ?? 0.0,
-      alpha: this["alpha"] as double? ?? 0.0,
+      red: clampValues ? clamp(red) : red,
+      green: clampValues ? clamp(green) : green,
+      blue: clampValues ? clamp(blue) : blue,
+      alpha: clampValues ? clamp(alpha) : alpha,
     );
   }
 }
